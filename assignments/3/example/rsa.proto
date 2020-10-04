@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package ousystems;
+
+service SecureMessaging {
+
+  // Requests and returns the Public Key
+  rpc GetPublicKey (NullMsg) returns (PublicKey) {}
+  
+  // Receives an Encrypt a message
+  rpc SendEncryptedMessage (EncryptedMessage) returns (MsgAck) {}
+}
+
+message PublicKey {
+  int32 n = 1;
+  int32 e = 2;
+}
+
+message EncryptedMessage {
+  // Integer representing encrypted message
+  int32 message = 1;
+  string src = 2;
+  string dst = 3;
+}
+
+// Return this acknowledging the receipt of a message
+message MsgAck {
+  int32 status = 1;
+  string src = 2;
+  string dst = 3;
+}
+
+// Empty Message Type
+message NullMsg {
+  int32 status = 1;
+}
