@@ -1,0 +1,8 @@
+https://grpc.io/docs/languages/python/basics/, helped me get the basic mechanics/syntax of gRPC including python code and .proto file
+https://en.wikipedia.org/wiki/RSA_(cryptosystem), helped me understand the RSA encryption algorithm
+https://www.journaldev.com/23642/python-concatenate-string-and-int, helped me fix a bug in a print statement
+https://www.jquery-az.com/python-modulo/, helped me understand arithmetic operators in python
+https://diveintopython3.problemsolving.io/index.html, helped me learn python on the fly
+https://developers.google.com/protocol-buffers/docs/proto3, helped learn the syntax and structure of .proto file
+https://stackoverflow.com/questions/30323439/raising-elements-of-a-list-to-a-power, helped me figure out how to apply an arithmetic operation to a list
+
