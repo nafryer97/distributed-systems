@@ -1,0 +1,68 @@
+/*
+
+    Noah Fryer
+    CS 4113
+    Dr Christan Grant
+    4 October 2020
+
+    Assignment 3
+
+*/
+
+syntax = "proto3";
+
+/* 
+
+Google says that python ignores the package directive 
+
+package ousystems
+
+*/
+
+service SecureMessaging {
+
+  // Requests and returns the Public Key
+  rpc GetPublicKey (NullMsg) returns (PublicKey) {}
+  
+  // Receives an Encrypt a message
+  rpc SendEncryptedMessage (EncryptedMessage) returns (MsgAck) {}
+}
+
+service Greeter {
+    //sends a greeting
+    rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+message PublicKey {
+  int32 n = 1;
+  int32 e = 2;
+}
+
+message EncryptedMessage {
+  // Integer representing encrypted message
+  int32 message = 1;
+  string src = 2;
+  string dst = 3;
+}
+
+// Return this acknowledging the receipt of a message
+message MsgAck {
+  int32 status = 1;
+  string src = 2;
+  string dst = 3;
+}
+
+// Empty Message Type
+message NullMsg {
+  int32 status = 1;
+}
+
+//the request message containing the user's name
+message HelloRequest {
+    string name = 1;
+}
+
+// the response message containing the greetings
+message HelloReply {
+    string message = 1;
+}
