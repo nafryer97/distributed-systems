@@ -8,4 +8,4 @@ In the encryption message I attempted to implement a simple RSA encryption schem
 
 In the gif I run <code> docker-compose up --build </code> and then docker initiates the two clients and the server. The clients say hello to the server, they exchange keys, and then the server prints out the messages that it received from the clients.
 
-
+![demo gif](./a3.gif)
