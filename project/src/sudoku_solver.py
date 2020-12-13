@@ -32,7 +32,6 @@ class SudokuGenerator:
 			self.generate_puzzle()
 			self.original = copy.deepcopy(self.grid)
 		
-		
 	def solve_input_sudoku(self):
 		"""solves a puzzle"""
 		self.generate_solution(self.grid)
