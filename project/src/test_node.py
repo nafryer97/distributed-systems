@@ -1,11 +1,15 @@
-from distributed_nodes import Node as Node
-from distributed_nodes import Master as Master
+from node import Node as Node
 import unittest
 import random
 
-
 class TestInit(unittest.TestCase):
     ''' tests the initialization of 9 nodes '''
-    #empty_square = [[0 for i in range(3)] for j in range(3)]
-    #number_tuple = (1,2,3,4,5,6,7,8,9)
-    pass
+    def test_init(self):
+        empty_node = [[0 for i in range(3)] for j in range(3)]
+        for i in range(9):
+            n = Node(i)
+            self.assertEqual(i,n.get_position())
+            self.assertEqual(empty_node,n.get_square())
+
+if __name__ == "__main__":
+    unittest.main()
