@@ -1,31 +1,85 @@
 version: '3.7'
 
 services:
-  server:
+  node1:
     build: .
     environment:
       - TZ=America/Chicago
       - DEBIAN_FRONTEND=noninteractive
-    hostname: server
-    container_name: server
+    hostname: master 
+    container_name: master
     networks:
       - default
-  client1:
+  node2:
     build: .
     environment:
       - TZ=America/Chicago
       - DEBIAN_FRONTEND=noninteractive
-    hostname: client1
-    container_name: client1
+    hostname: node2
+    container_name: node2
     networks:
       - default
-  client2:
+  node3:
     build: .
     environment:
       - TZ=America/Chicago
       - DEBIAN_FRONTEND=noninteractive
-    hostname: client2
-    container_name: client2
+    hostname: node3
+    container_name: node3
+    networks:
+      - default
+  node4:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node4
+    container_name: node4
+    networks:
+      - default
+  node5:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node5
+    container_name: node5
+    networks:
+      - default
+  node6:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node6
+    container_name: node6
+    networks:
+      - default
+  node7:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node7
+    container_name: node7
+    networks:
+      - default
+  node8:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node8
+    container_name: node8
+    networks:
+      - default
+  node9:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node9
+    container_name: node9
     networks:
       - default
 
