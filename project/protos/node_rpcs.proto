@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package distributed_sudoku
+
+service InterNodeCommunication
+{
+    rpc get_row_node0 (r) returns (row) {}
+
+    rpc get_row_node1 (r) returns (row) {}
+    
+    rpc get_row_node2 (r) returns (row) {}
+    
+    rpc get_row_node3 (r) returns (row) {}
+        
+    rpc get_row_node4 (r) returns (row) {}
+        
+    rpc get_row_node5 (r) returns (row) {}
+        
+    rpc get_row_node6 (r) returns (row) {}
+        
+    rpc get_row_node7 (r) returns (row) {}
+        
+    rpc get_row_node8 (r) returns (row) {}
+        
+    rpc get_col_node0 (r) returns (row) {}
+        
+    rpc get_col_node1 (r) returns (row) {}
+        
+    rpc get_col_node2 (r) returns (row) {}
+        
+    rpc get_col_node3 (r) returns (row) {}
+        
+    rpc get_col_node4 (r) returns (row) {}
+        
+    rpc get_col_node5 (r) returns (row) {}
+        
+    rpc get_col_node6 (r) returns (row) {}
+        
+    rpc get_col_node7 (r) returns (row) {}
+        
+    rpc get_col_node8 (r) returns (row) {}
+        
+    rpc solve_row_one (r) returns (row) {}
+        
+    rpc solve_row_two (r) returns (row) {}
+        
+    rpc solve_row_three (r) returns (row) {}
+        
+}

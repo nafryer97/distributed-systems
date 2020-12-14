@@ -34,6 +34,25 @@ class TestAssignment(unittest.TestCase):
         self.assertEqual(x.get_square(),random_sq1)
         self.assertEqual(y.get_square(),random_sq2)
 
+class TestSquareCheck(unittest.TestCase):
+    ''' tests to see if the square checker finds an element '''
+    def testSquarecChecker(self):
+        test_vals = (random.randint(1,9),random.randint(1,9),random.randint(1,9))
+        s = Square()
+        for i in test_vals:
+            self.assertEqual(False, s.check_num_square(i))
+            for j in range(3):
+                self.assertEqual(False, s.check_num_col(j,i))
+                self.assertEqual(False,s.check_num_row(j,i))
+        for i in range(3):
+            for j in range(3):
+                if i == j:
+                    s.assign_val(i,j,test_vals[i])
+                    self.assertEqual(True,s.check_num_row(i,test_vals[i]))
+                    self.assertEqual(True, s.check_num_col(j,test_vals[i]))
+        for i in test_vals:
+            self.assertEqual(True, s.check_num_square(i))
+
 if __name__ == "__main__":
     unittest.main()
 

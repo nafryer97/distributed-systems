@@ -6,6 +6,7 @@ class Node:
     '''Represents member of the system that's responsible for its own 3x3 square '''
     def __init__(self,pos=0):
         self.pos = pos
+        self.path = 0
         self.square = Square()
 
     def get_position(self):
@@ -24,6 +25,127 @@ class Node:
         ''' calls the Square.get_col() method '''
         return self.square.get_col(c)
 
-    
-    
+    def check_num_node(self,n):
+        ''' returns true if this node has that number '''
+        return self.square.check_num_square(n)
 
+    def check_row_node(self,r,n):
+        ''' returns true if the number is in the row for this node '''
+        return self.square.check_num_row(r,n)
+
+    def check_col_node(self,c,n):
+        ''' returns true if the number is in the col for this node '''
+        return self.square.check_num_col(c,n)
+
+    # these will probably be RPCs
+    def get_row_node0(self,r):
+        ''''''
+        pass
+
+    def get_row_node1(self,r,caller):
+        ''''''
+        pass
+    
+    def get_row_node2(self,r):
+        ''''''
+        pass
+    
+    def get_row_node3(self,r):
+        ''''''
+        pass
+
+    def get_row_node4(self,r,caller):
+        ''''''
+        pass
+    def get_row_node5(self,r):
+        ''''''
+        pass
+    def get_row_node6(self,r):
+        ''''''
+        pass
+    def get_row_node7(self,r,caller):
+        ''''''
+        pass
+    def get_row_node8(self,r):
+        ''''''
+        pass
+    def get_col_node0(self,c):
+        ''''''
+        pass
+    def get_col_node1(self,r):
+        ''''''
+        pass
+    def get_col_node2(self,r):
+        ''''''
+        pass
+    def get_col_node3(self,r,caller):
+        ''''''
+        pass
+    def get_col_node4(self,r,caller):
+        ''''''
+        pass
+    def get_col_node5(self,r,caller):
+        ''''''
+        pass
+    def get_col_node6(self,r):
+        ''''''
+        pass
+    def get_col_node7(self,r):
+        ''''''
+        pass
+    def get_col_node8(self,r):
+        ''''''
+        pass
+
+    def solve_row_one(self):
+        ''''''
+        pass
+
+    def solve_row_two(self):
+        ''''''
+        pass
+
+    def solve_row_three(self):
+        ''''''
+        pass
+
+class NodeZero(Node):
+    ''''''
+    def good_choice(self,r,c,n):
+        ''''''
+        pass
+    def solve_row(self,row):
+        ''' fills in values for a row '''
+        pass
+
+    def generate_row(self,r):
+        ''''''
+        pass
+
+class NodeOne(Node):
+    ''''''
+    pass
+
+class NodeTwo(Node):
+    ''''''
+    pass
+
+class NodeThree(Node):
+    ''''''
+    pass
+
+class NodeFour(Node):
+    ''''''
+    pass
+
+class NodeFive(Node):
+    pass
+
+class NodeSix(Node):
+    pass
+
+class NodeSeven(Node):
+    pass
+
+class NodeEight(Node):
+    pass
