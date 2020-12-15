@@ -47,3 +47,23 @@ service InterNodeCommunication
     rpc solve_row_three (r) returns (row) {}
         
 }
+
+message Row 
+{
+
+}
+
+message Column 
+{
+
+}
+
+message Square
+{
+
+}
+
+message Grid 
+{
+
+}
