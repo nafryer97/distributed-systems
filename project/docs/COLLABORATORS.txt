@@ -1,0 +1,57 @@
+This isn't an exhaustive list of every link I've visited over the course of teaching myself new things for this project, but you can probably see the inspiration in my code from these links
+
+# Backtracking Algorithm for Solving a Sudoku puzzle
+
+This was the biggest help for understanding the sudoku backtracking algorithm in python 
+
+https://lvngd.com/blog/generating-and-solving-sudoku-puzzles-python/
+
+https://gist.github.com/lvngd/8c1aafc4851985bbd239bc59153f26f9
+
+# StackOverflow pages on random Python and Docker stuff
+
+https://stackoverflow.com/questions/50121943/docker-compose-hangs-on-attaching-to
+
+https://stackoverflow.com/questions/36014777/docker-ps-shows-empty-list
+
+https://stackoverflow.com/questions/31697828/docker-error-name-is-already-in-use-by-container
+
+https://stackoverflow.com/questions/24133929/how-do-you-declare-a-global-constant-in-python
+
+https://stackoverflow.com/questions/2831112/python-instance-variable-as-default-parameter
+
+https://stackoverflow.com/questions/2764017/is-false-0-and-true-1-an-implementation-detail-or-is-it-guaranteed-by-the
+
+https://stackoverflow.com/questions/7571635/fastest-way-to-check-if-a-value-exists-in-a-list
+
+https://stackoverflow.com/questions/56426925/how-to-check-if-a-list-contains-a-list-of-lists-inside
+
+https://stackoverflow.com/questions/14667578/check-if-a-number-already-exist-in-a-list-in-python
+
+https://stackoverflow.com/questions/33090546/how-to-add-two-lists-with-the-same-amount-of-indexs-in-python
+
+https://stackoverflow.com/questions/2031111/in-python-how-can-i-put-a-thread-to-sleep-until-a-specific-time
+
+https://stackoverflow.com/questions/5234126/python-variable-scope-passing-by-reference-or-copy
+
+https://stackoverflow.com/questions/10851246/python-comparing-two-matrices
+
+https://stackoverflow.com/questions/903853/how-do-you-extract-a-column-from-a-multi-dimensional-array
+
+# Geeks for Geeks pages on random Python stuff
+
+https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
+
+https://www.geeksforgeeks.org/benefits-of-double-division-operator-over-single-division-operator-in-python/
+
+https://www.geeksforgeeks.org/python-check-if-a-list-exists-in-given-list-of-lists/
+
+https://www.geeksforgeeks.org/python-check-if-element-exists-in-list-of-lists/
+
+https://www.geeksforgeeks.org/how-to-create-a-list-of-object-in-python-class/https://www.geeksforgeeks.org/switch-case-in-python-replacement/
+
+https://www.geeksforgeeks.org/inheritance-in-python/https://www.geeksforgeeks.org/convert-integer-to-string-in-python/
+
+https://www.geeksforgeeks.org/python-list-index/
+
+https://www.geeksforgeeks.org/sudoku-backtracking-7/

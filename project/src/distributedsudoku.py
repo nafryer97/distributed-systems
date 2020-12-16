@@ -1,3 +1,8 @@
+"""
+    Driver module to run off of the command line
+
+"""
+
 from sudokunode import NodePeer, DistributedPeerInfo
 from concurrent import futures
 import socket

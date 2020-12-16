@@ -2,88 +2,6 @@ from distributedsudoku import DistributedPeerInfo
 from sudokunode import NodePeer, NodeClient, NodeServer
 import unittest
 
-class TestPeer(unittest.TestCase):
-    ''''''
-    pass
-
-class TestClientGetNeighborData(unittest.TestCase):
-    ''''''
-    def test_get_neighbor_square(self):
-        ''' '''
-        pass
-
-    def test_get_neighbor_row(self):
-        ''' '''
-        pass
-
-    def test_get_neighbor_col(self):
-        ''' '''
-        pass
-
-    def test_get_neighbor_grid(self):
-        ''' '''
-        pass
-
-class TestClientSendData(unittest.TestCase):
-    ''''''
-    def test_send_row(self):
-        ''' '''
-        pass
-
-    def test_send_col(self):
-        ''' '''
-        pass
-
-    def test_send_square(self):
-        ''' '''
-        pass
-
-    def test_send_grid(self):
-        ''' '''
-        pass
-
-class TestServerGetData(unittest.TestCase):
-    ''' '''
-    def test_get_pos(self):
-        ''' '''
-        pass
-
-    def test_get_square(self):
-        ''' '''
-        pass
-
-    def test_get_row(self):
-        ''' '''
-        pass
-
-    def test_get_col(self):
-        ''' '''
-        pass
-
-class TestServerGetNeighborData(unittest.TestCase):
-    ''' '''
-    pass
-
-class TestServerUpdate(unittest.TestCase):
-    ''' '''
-    def test_update_square(self):
-        ''' '''
-        pass
-
-    def test_update_row(self):
-        ''' '''
-        pass
-
-    
-    def test_update_col(self):
-        ''' '''
-        pass
-
-class TestServerUpdateNeighbor(unittest.TestCase):
-    ''' '''
-    pass
-
-
 class TestDistributedPeerInfo(unittest.TestCase):
     ''' tests the return values from the dictionary methods '''
     def test_position_from_hostname(self):
@@ -124,6 +42,82 @@ class TestDistributedPeerInfo(unittest.TestCase):
 
         self.assertEqual(addresses,address_entries)
 
+class TestPeer(unittest.TestCase):
+    ''' tests NodePeer methods  '''
+    pass
+
+class TestClientGetNeighborData(unittest.TestCase):
+    ''' tests NodeClient methods that request info from peers '''
+    def test_get_neighbor_square(self):
+        ''' '''
+        pass
+
+    def test_get_neighbor_row(self):
+        ''' '''
+        pass
+
+    def test_get_neighbor_col(self):
+        ''' '''
+        pass
+
+    def test_get_neighbor_grid(self):
+        ''' '''
+        pass
+
+class TestClientSendData(unittest.TestCase):
+    ''' tests NodeClient methods that send data to servers  '''
+    def test_send_row(self):
+        ''' '''
+        pass
+
+    def test_send_col(self):
+        ''' '''
+        pass
+
+    def test_send_square(self):
+        ''' '''
+        pass
+
+    def test_send_grid(self):
+        ''' '''
+        pass
+
+class TestServerGetData(unittest.TestCase):
+    ''' tests NodeServer methods that send data to clients '''
+    def test_get_pos(self):
+        ''' '''
+        pass
+
+    def test_get_square(self):
+        ''' '''
+        pass
+
+    def test_get_row(self):
+        ''' '''
+        pass
+
+    def test_get_col(self):
+        ''' '''
+        pass
+
+class TestServerUpdate(unittest.TestCase):
+    ''' tests the server update methods where clients send data to server '''
+    def test_update_square(self):
+        ''' '''
+        pass
+
+    def test_update_row(self):
+        ''' '''
+        pass
+
+    
+    def test_update_col(self):
+        ''' '''
+        pass
+
+class TestServerUpdateNeighbor(unittest.TestCase):
+    ''' tests server methods that add gossipping functionality  '''
+    pass
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,3 +1,9 @@
+"""
+    Module for individual nodes in system; provides server and client functionality
+    because members are peers
+
+"""
+
 from wirepickle.server import expose, Server
 from wirepickle.client import Client
 from sudokuboard import Grid, Square

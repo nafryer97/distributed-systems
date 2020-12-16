@@ -1,3 +1,8 @@
+"""
+    Module for data structures representing the sudoku board
+
+"""
+
 import copy
 
 class Grid:
@@ -8,6 +13,7 @@ class Grid:
         self.square_list = [Square() for i in range(9)]
 
     def get_grid(self):
+        ''' returns the list that this instance uses to represent the whole board '''
         return self.grid
 
     def get_square(self,sq):
@@ -15,10 +21,10 @@ class Grid:
         return self.square_list[sq]
 
     def compile_square_list(self):
-        ''' '''
+        ''' compiles a grid from a list of squares '''
         pass
 
-    def compile_grid(self,grid,sq0,sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq8):
+    def compile_grid(self,sq0,sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq8):
         ''' compiles a sudoku grid from 9 squares '''
         for i in range(3):
             self.grid[i] = sq0[i] + sq1[i] + sq2[i]
