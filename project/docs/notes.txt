@@ -1,0 +1,18 @@
+Title - The Covid-19 Distributed Sudoku
+
+Description
+
+ I was one of the distributed sudoku folks; I based my project off of some of the stuff that we had worked with in Assignment 3
+
+Distributed Systems Problem 1
+
+    Data representation - switching from gRPC to wirepickle, which uses pickle to create RPC functionality in python natively
+
+Distributed Systems Problem 2
+
+   Coordination - originally I planned for each node to only hold the square that it was responsible for. It was a lot easier for each node to keep a copy of the grid instead
+    
+
+Testing for Success
+
+    Unit testing using the python unittest package

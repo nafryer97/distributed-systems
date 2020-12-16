@@ -1,13 +1,22 @@
 version: '3.7'
 
 services:
+  node0:
+    build: .
+    environment:
+      - TZ=America/Chicago
+      - DEBIAN_FRONTEND=noninteractive
+    hostname: node0
+    container_name: node0
+    networks:
+      - default
   node1:
     build: .
     environment:
       - TZ=America/Chicago
       - DEBIAN_FRONTEND=noninteractive
-    hostname: master 
-    container_name: master
+    hostname: node1
+    container_name: node1
     networks:
       - default
   node2:
@@ -71,15 +80,6 @@ services:
       - DEBIAN_FRONTEND=noninteractive
     hostname: node8
     container_name: node8
-    networks:
-      - default
-  node9:
-    build: .
-    environment:
-      - TZ=America/Chicago
-      - DEBIAN_FRONTEND=noninteractive
-    hostname: node9
-    container_name: node9
     networks:
       - default
 
